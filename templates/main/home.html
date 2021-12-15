@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+    <div class="ui container segment">
+        <h1 class="ui header">Password Generator</h1>
+    </div>
+    <div class="ui container segment">
+        <h2 class="ui header">Password Choices</h1>
+        <div class="ui container segment">
+            <h2 class="ui header">First Password: {{password}}</h1>
+        </div>
+        <div class="ui container segment">
+            <h2 class="ui header">Second Password: {{password2}}</h1>
+        </div>
+        <div class="ui container segment">
+            <h2 class="ui header">Third Password: {{password3}}</h1>
+        </div>
+        <button class="ui secondary button" type="button"><a href="{% url 'home' %}">Generate New Password</a></button>
+    </div>
+{% endblock content %}
